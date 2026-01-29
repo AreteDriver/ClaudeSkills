@@ -1,6 +1,6 @@
-# ClaudeSkills
+# AI_Skills
 
-Custom Claude skills and prompt engineering resources for AI-assisted development workflows.
+Custom AI skills and prompt engineering resources for AI-assisted development workflows.
 
 ## What This Is
 
@@ -69,7 +69,7 @@ Drop the skill folder into your project or reference it in your `CLAUDE.md`:
 ```markdown
 # CLAUDE.md
 
-See skills from: https://github.com/AreteDriver/ClaudeSkills
+See skills from: https://github.com/AreteDriver/AI_Skills
 
 Active skills:
 - senior-software-engineer (always on for code tasks)
@@ -88,7 +88,7 @@ Reference the skill behavior directly:
 ## Structure
 
 ```
-ClaudeSkills/
+AI_Skills/
 ├── skills/                              # Skill definitions (27 total)
 │   ├── senior-software-engineer/        # Code review, architecture
 │   ├── senior-software-analyst/         # Codebase auditing
