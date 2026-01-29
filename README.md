@@ -8,14 +8,52 @@ A collection of Claude Code skills that transform Claude from a general assistan
 
 ## Skills
 
+### Development Workflow Agents
+
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
 | [senior-software-engineer](skills/senior-software-engineer/SKILL.md) | Code review, architecture, mentoring | Any coding task, PR reviews, debugging |
 | [senior-software-analyst](skills/senior-software-analyst/SKILL.md) | Codebase auditing, system mapping | Unfamiliar codebases, documentation, tech debt |
+| [strategic-planner](skills/strategic-planner/SKILL.md) | Feature decomposition, implementation planning | Breaking down features into actionable steps |
+| [code-builder](skills/code-builder/SKILL.md) | Production-ready code implementation | Writing new features based on plans |
+| [testing-specialist](skills/testing-specialist/SKILL.md) | Comprehensive test suite creation | Unit tests, integration tests, edge cases |
+| [code-reviewer](skills/code-reviewer/SKILL.md) | Quality, security, and best practices review | PR reviews, security audits, code quality |
+| [software-architect](skills/software-architect/SKILL.md) | System design and technical decisions | Architecture, component design, tech selection |
+| [documentation-writer](skills/documentation-writer/SKILL.md) | API docs, guides, and READMEs | Documentation, developer guides, API reference |
+
+### Data & Analytics Agents
+
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [data-engineer](skills/data-engineer/SKILL.md) | Data pipelines, schemas, ETL | Data ingestion, transformation, validation |
+| [data-analyst](skills/data-analyst/SKILL.md) | Statistical analysis, pattern finding | EDA, hypothesis testing, insights |
+| [data-visualizer](skills/data-visualizer/SKILL.md) | Charts, dashboards, visual design | Creating visualizations, dashboard layouts |
+| [report-generator](skills/report-generator/SKILL.md) | Executive summaries, analytical reports | Stakeholder reports, findings documentation |
+
+### Operational Skills
+
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [file-operations](skills/file-operations/SKILL.md) | Safe filesystem operations | File CRUD with backups and validation |
+| [web-search](skills/web-search/SKILL.md) | Web search with rate limiting | Gathering current information |
+| [web-scrape](skills/web-scrape/SKILL.md) | Ethical web scraping | Content extraction, table parsing |
+| [github-operations](skills/github-operations/SKILL.md) | Git CLI and GitHub API operations | Repos, branches, PRs, issues |
+| [email-compose](skills/email-compose/SKILL.md) | Email drafting with approval workflow | Composing and sending emails safely |
+| [process-management](skills/process-management/SKILL.md) | System process control | Process monitoring, service management |
+
+### Domain-Specific Skills
+
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
 | [mentor-linux](skills/mentor-linux/SKILL.md) | Linux certification prep | RHCSA, Linux+, LPIC-1 study |
 | [eve-esi](skills/eve-esi/SKILL.md) | EVE Online ESI API integration | ESI endpoints, SSO auth, rate limiting |
 | [gamedev](skills/gamedev/SKILL.md) | Game dev patterns (Bevy/Rust ECS) | Building games, ECS architecture, game loops |
 | [streamlit](skills/streamlit/SKILL.md) | Streamlit app patterns | Dashboards, state management, deployment |
+
+### Infrastructure Skills
+
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
 | [perf](skills/perf/SKILL.md) | Performance profiling & optimization | Bottleneck hunting, benchmarking |
 | [backup](skills/backup/SKILL.md) | Backup strategy & data integrity | Backup design, disaster recovery |
 | [monitor](skills/monitor/SKILL.md) | Observability & monitoring | Logging, metrics, alerting, health checks |
@@ -51,15 +89,34 @@ Reference the skill behavior directly:
 
 ```
 ClaudeSkills/
-├── skills/                              # Persona-based skill definitions
-│   ├── senior-software-engineer/
-│   │   ├── SKILL.md                     # Code review, architecture, mentoring
-│   │   └── references/
-│   │       └── coding-standards.md      # Coding standards reference
-│   ├── senior-software-analyst/
-│   │   └── SKILL.md                     # Codebase auditing, system mapping
-│   └── mentor-linux/
-│       └── SKILL.md                     # Linux certification prep
+├── skills/                              # Skill definitions (27 total)
+│   ├── senior-software-engineer/        # Code review, architecture
+│   ├── senior-software-analyst/         # Codebase auditing
+│   ├── strategic-planner/               # Feature planning
+│   ├── code-builder/                    # Code implementation
+│   ├── testing-specialist/              # Test suite creation
+│   ├── code-reviewer/                   # Code review
+│   ├── software-architect/              # System design
+│   ├── documentation-writer/            # Documentation
+│   ├── data-engineer/                   # Data pipelines
+│   ├── data-analyst/                    # Statistical analysis
+│   ├── data-visualizer/                 # Visualizations
+│   ├── report-generator/                # Reports
+│   ├── file-operations/                 # Filesystem ops
+│   ├── web-search/                      # Web search
+│   ├── web-scrape/                      # Web scraping
+│   ├── github-operations/               # GitHub/Git ops
+│   ├── email-compose/                   # Email drafting
+│   ├── process-management/              # Process control
+│   ├── mentor-linux/                    # Linux cert prep
+│   ├── eve-esi/                         # EVE Online API
+│   ├── gamedev/                         # Game development
+│   ├── streamlit/                       # Streamlit apps
+│   ├── perf/                            # Performance
+│   ├── backup/                          # Backup strategy
+│   ├── monitor/                         # Observability
+│   ├── systemd/                         # Systemd services
+│   └── networking/                      # Linux networking
 ├── prompts/
 │   └── development-collection.md        # Battle-tested prompt patterns
 ├── templates/
@@ -117,6 +174,13 @@ Resources for building new skills:
 4. **Constraints** - What it never does
 5. **Trigger contexts** - When to activate different modes
 6. **Output formats** - How responses should be structured
+
+## Credits
+
+Several skills adapted from [Gorgon](https://github.com/AreteDriver/Gorgon) multi-agent orchestration system:
+- Development workflow agents (planner, builder, tester, reviewer, architect, documenter)
+- Data pipeline agents (data-engineer, analyst, visualizer, reporter)
+- Operational skills (file-operations, web-search, web-scrape, github-operations, email-compose, process-management)
 
 ## Author
 
