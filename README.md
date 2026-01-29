@@ -1,10 +1,18 @@
 # ClaudeSkills
 
-Custom Claude skills and prompt engineering resources for AI-assisted development workflows.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude-Code-blueviolet)](https://claude.ai/code)
+[![Skills](https://img.shields.io/badge/Skills-27-blue)]()
 
-## What This Is
+**Production-ready Claude Code skills for software engineering, data analysis, DevOps, and domain-specific workflows.**
 
-A collection of Claude Code skills that transform Claude from a general assistant into specialized personas for specific tasks. Each skill is a `.md` file that defines behaviors, constraints, and response formats.
+---
+
+## The Problem
+
+Claude is powerful but generic. For specialized work you end up re-explaining context, missing domain best practices, and getting responses that don't match your workflow.
+
+**Skills fix this.** Each skill transforms Claude into a specialized persona with defined behaviors, constraints, and output formats. Load once, use everywhere.
 
 ## Skills
 
@@ -174,6 +182,19 @@ Resources for building new skills:
 4. **Constraints** - What it never does
 5. **Trigger contexts** - When to activate different modes
 6. **Output formats** - How responses should be structured
+
+---
+
+## Why Skills > System Prompts
+
+| Aspect | System Prompts | Skills |
+|--------|---------------|--------|
+| **Portability** | Locked in platform | Version-controlled, shareable |
+| **Composability** | One blob | Mix and match |
+| **Transparency** | Hidden | Readable, auditable |
+| **Evolution** | Manual updates | Git history, branches |
+
+---
 
 ## Credits
 
